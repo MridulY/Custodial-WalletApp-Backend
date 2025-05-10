@@ -16,7 +16,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow frontend origin
+    origin: "https://custodial-wallet-app-frontend.vercel.app", // Allow frontend origin
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true, // If you send cookies or auth headers
   })
